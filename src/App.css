@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* styles.css (or your preferred CSS file) */
+.seat-map {
+    display: flex;
+    flex-wrap: wrap;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Color coding for passenger categories */
+  .checked-in {
+    background-color: #aaffaa; /* Green for checked-in passengers */
   }
-}
+  
+  .wheelchair {
+    background-color: #ffcccc; /* Light red for passengers requiring wheelchair */
+  }
+  
+  .with-infant {
+    background-color: #aaccff; /* Light blue for passengers with infants */
+  }
+  
+/* styles.css */
+.seat.available {
+    background-color: #fff; /* White for available seats */
+  }
+  
+  .seat.unavailable {
+    background-color: #ccc; /* Gray for unavailable seats (already checked-in) */
+  }
+
+  /* styles.css */
+.seat.checked-in {
+    background-color: #aaffaa; /* Green for checked-in seats */
+  }
+  
+  .seat.unchecked-in {
+    background-color: #fff; /* White for unchecked-in seats */
+  }
+/* app.css */
+.seat-map {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .checked-in {
+    background-color: #a0e0a0;
+  }
+  
+  .special-meal {
+    background-color: #ff9999;
+  }
+  
