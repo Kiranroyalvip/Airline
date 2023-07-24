@@ -55,7 +55,7 @@ const AdminDashboard = () => {
       );
       return { ...flight, passengers: updatedPassengers };
     });
-
+    
     setFlights(updatedFlights);
   };
 
