@@ -1,5 +1,6 @@
 // SeatMap.js
 import React from "react";
+import "../App.css";
 
 const SeatMap = ({ passengers, onSeatSelect }) => {
   const handleSeatClick = (passenger) => {
@@ -32,4 +33,3 @@ const SeatMap = ({ passengers, onSeatSelect }) => {
 };
 
 export default SeatMap;
-

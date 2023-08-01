@@ -1,72 +1,90 @@
 /* styles.css (or your preferred CSS file) */
 .seat-map {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .seat {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    font-size: 14px;
-  }
-  
-  /* Color coding for passenger categories */
-  .checked-in {
-    background-color: #aaffaa; /* Green for checked-in passengers */
-  }
-  
-  .wheelchair {
-    background-color: #ffcccc; /* Light red for passengers requiring wheelchair */
-  }
-  
-  .with-infant {
-    background-color: #aaccff; /* Light blue for passengers with infants */
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 14px;
+}
+
+/* Color coding for passenger categories */
+.checked-in {
+  background-color: #aaffaa; /* Green for checked-in passengers */
+}
+
+.wheelchair {
+  background-color: #ffcccc; /* Light red for passengers requiring wheelchair */
+}
+
+.with-infant {
+  background-color: #aaccff; /* Light blue for passengers with infants */
+}
+
 /* styles.css */
 .seat.available {
-    background-color: #fff; /* White for available seats */
-  }
-  
-  .seat.unavailable {
-    background-color: #ccc; /* Gray for unavailable seats (already checked-in) */
-  }
+  background-color: #fff; /* White for available seats */
+}
 
-  /* styles.css */
+.seat.unavailable {
+  background-color: #ccc; /* Gray for unavailable seats (already checked-in) */
+}
+
+/* styles.css */
 .seat.checked-in {
-    background-color: #aaffaa; /* Green for checked-in seats */
-  }
-  
-  .seat.unchecked-in {
-    background-color: #fff; /* White for unchecked-in seats */
-  }
+  background-color: #aaffaa; /* Green for checked-in seats */
+}
+
+.seat.unchecked-in {
+  background-color: #fff; /* White for unchecked-in seats */
+}
 /* app.css */
 .seat-map {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .seat {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    cursor: pointer;
-  }
-  
-  .checked-in {
-    background-color: #a0e0a0;
-  }
-  
-  .special-meal {
-    background-color: #ff9999;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.checked-in {
+  background-color: #a0e0a0;
+}
+
+.special-meal {
+  background-color: #ff9999;
+}
+.header {
+  padding: 5px;
+  text-align: center;
+  background-color: #1abc9c;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header li {
+  display: inline-block;
+  margin: 0 10px;
+}

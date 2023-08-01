@@ -4,6 +4,7 @@ import FlightList from "./FlightList";
 import SeatMap from "./SeatMap";
 import PassengerList from "./PassengerList";
 import PassengerDetails from "./PassengerDetails";
+import "../App.css";
 
 const CheckIn = () => {
   // Dummy flight data for testing purposes
@@ -73,10 +74,17 @@ const CheckIn = () => {
         <div>
           <h2>Selected Flight: {selectedFlight.flightNumber}</h2>
           {/* Display other flight details here */}
-          <SeatMap passengers={selectedFlight.passengers} onSeatSelect={handleSeatSelect} />
+          <SeatMap
+            passengers={selectedFlight.passengers}
+            onSeatSelect={handleSeatSelect}
+          />
           <PassengerList passengers={selectedFlight.passengers} />
           {selectedFlight.passengers.map((passenger) => (
-            <PassengerDetails key={passenger.id} passenger={passenger} onChangeSeat={handleChangeSeat} />
+            <PassengerDetails
+              key={passenger.id}
+              passenger={passenger}
+              onChangeSeat={handleChangeSeat}
+            />
           ))}
         </div>
       )}
